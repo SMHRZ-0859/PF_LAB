@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, c, max;
+    
+    printf("Enter number 1: ");
+    scanf("%d", &a);
+    
+    printf("Enter number 2: ");
+    scanf("%d", &b);
+    
+    printf("Enter number 3: ");
+    scanf("%d", &c);
+
+    // Find the maximum number
+    if (a > b) {
+        if (a > c) {
+            max = a;
+        } else {
+            max = c;
+        }
+    } else {
+        if (b > c) {
+            max = b;
+        } else {
+            max = c;
+        }
+    }
+
+    printf("The greatest number is: %d\n", max);
+    
+    return 0;
+}
+
