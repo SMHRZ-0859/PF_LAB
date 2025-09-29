@@ -3,7 +3,6 @@
 int main() {
     char start, e;
 
-
     printf("Please say the starting letter of a country: ");
     scanf("%c", &start); 
     
@@ -25,16 +24,16 @@ int main() {
             }
             break;
 
-        case 'B':
-        case 'b':
+        case 'C':
+        case 'c':
             printf("Please say the ending letter: ");
             scanf(" %c", &e); 
 
             switch(e) {
                 case 'A':
                 case 'a':
-                    printf("\nCountries starting with 'B' and ending with 'A':\n");
-                    printf("Bulgaria\nBolivia\nBotswana\n");
+                    printf("\nCountries starting with 'C' and ending with 'A':\n");
+                    printf("Canada\nColombia\nCroatia\n");
                     break;
                 default:
                     printf("\nNo such country.\n");
@@ -43,7 +42,7 @@ int main() {
             break;
 
         default:
-            printf("Please type a correct starting letter ('A' or 'B').\n");
+            printf("Please type a correct starting letter ('A' or 'C').\n");
             break;
     }
 
