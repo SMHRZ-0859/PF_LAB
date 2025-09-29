@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+int main() {
+    char start, e;
+
+
+    printf("Please say the starting letter of a country: ");
+    scanf("%c", &start); 
+    
+    switch(start) {
+        case 'A':
+        case 'a':
+            printf("Please say the ending letter: ");
+            scanf(" %c", &e); 
+            
+            switch(e) {
+                case 'A':
+                case 'a':
+                    printf("\nCountries starting with 'A' and ending with 'A':\n");
+                    printf("Alaska\nAlbania\nAlgeria\n");
+                    break;
+                default:
+                    printf("\nNo such country.\n");
+                    break;
+            }
+            break;
+
+        case 'B':
+        case 'b':
+            printf("Please say the ending letter: ");
+            scanf(" %c", &e); 
+
+            switch(e) {
+                case 'A':
+                case 'a':
+                    printf("\nCountries starting with 'B' and ending with 'A':\n");
+                    printf("Bulgaria\nBolivia\nBotswana\n");
+                    break;
+                default:
+                    printf("\nNo such country.\n");
+                    break;
+            }
+            break;
+
+        default:
+            printf("Please type a correct starting letter ('A' or 'B').\n");
+            break;
+    }
+
+    return 0;
+}
